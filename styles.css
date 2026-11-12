@@ -1,6 +1,16 @@
+html {
+    background-color: grey;
+}
+
 header {
     display: flex;
     justify-content: center;
+    
+}
+
+h1 {
+    font-size: 30px;
+    margin-block: 1px;
 }
 
 menu {
@@ -24,5 +34,4 @@ footer{
     display: flex;
     flex-basis: auto;
     align-self: auto;
-
 }
