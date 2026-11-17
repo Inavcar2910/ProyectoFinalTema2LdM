@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles_contacto.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_contacto.css" />
   </head>
   <body>
     <header><h1>PadelPlus</h1></header>
@@ -17,6 +17,27 @@
         <a href="contacto.html"><h3>Contacto</h3></a>
       </menu>
     </nav>
-    <form action="contacto.html"></form>
+    <form action="contacto.html" method="post">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" required />
+      <br />
+
+      <label for="apellido">Apellidos:</label>
+      <input type="text" name="apellido" required />
+      <br />
+
+      <label for="correo">Correo:</label>
+      <input type="text" name="correo" required />
+      <br />
+
+      <label for="notificaciones">Notificaciones: Sí</label>
+      <input type="radio" name="notificaciones" required />
+      <label for="notificaciones">No</label>
+      <input type="radio" name="notificaciones" required />
+      <br />
+<canvas></canvas>
+      <button type="submit">Enviar</button>
+    </form>
   </body>
 </html>
