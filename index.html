@@ -1,66 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles_index.css" />
-  </head>
-  <body>
-    <header><h1>PadelPlus</h1></header>
-    <nav>
-      <menu>
-        <a href="index.html"><h3>Inicio</h3></a>
-        <a href="catalogo.html"><h3>Catálogo</h3></a>
-        <a href="info.html"><h3>Info</h3></a>
-        <a href="contacto.html"><h3>Contacto</h3></a>
-      </menu>
-    </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio — PadelPlus</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/favicon.svg">
+  <meta name="description" content="PadelPlus es una tienda de material de pádel: palas, pelotas y grips, con guías sencillas para elegir tu primera pala.">
+  <meta name="theme-color" content="#12355b">
+  <link rel="alternate" type="application/rss+xml" title="Noticias RSS" href="noticias.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
-      eaque, accusantium sequi culpa quaerat provident dolorem ut excepturi,
-      voluptas consectetur veritatis tempore blanditiis ad ipsum quae odio at
-      voluptatum est?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
-      eaque, accusantium sequi culpa quaerat provident dolorem ut excepturi,
-      voluptas consectetur veritatis tempore blanditiis ad ipsum quae odio at
-      voluptatum est?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
-      eaque, accusantium sequi culpa quaerat provident dolorem ut excepturi,
-      voluptas consectetur veritatis tempore blanditiis ad ipsum quae odio at
-      voluptatum est?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
-      eaque, accusantium sequi culpa quaerat provident dolorem ut excepturi,
-      voluptas consectetur veritatis tempore blanditiis ad ipsum quae odio at
-      voluptatum est?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
-      eaque, accusantium sequi culpa quaerat provident dolorem ut excepturi,
-      voluptas consectetur veritatis tempore blanditiis ad ipsum quae odio at
-      voluptatum est?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
-      eaque, accusantium sequi culpa quaerat provident dolorem ut excepturi,
-      voluptas consectetur veritatis tempore blanditiis ad ipsum quae odio at
-      voluptatum est?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
-      eaque, accusantium sequi culpa quaerat provident dolorem ut excepturi,
-      voluptas consectetur veritatis tempore blanditiis ad ipsum quae odio at
-      voluptatum est?
-    </p>
-    <section></section>
-  </body>
-  <footer>Ismael Navarro Carrasco - Copyrigth 2026</footer>
+  <header class="cabecera">
+    <a href="index.html">
+      <img class="logo" src="imagenes/logo.svg" alt="Logo de PadelPlus: una pelota de pádel junto al nombre de la tienda" width="240" height="64">
+    </a>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="barra">
+    <ul class="menu">
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="info.html">Información</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Portada -->
+    <section class="portada animado">
+      <h1>PadelPlus: el material que necesitas para tu próximo partido de pádel</h1>
+      <p>Somos una tienda online especializada en pádel. Encontrarás palas para todos los niveles, pelotas con buen bote y grips que mantienen la pala bien sujeta incluso en los partidos más largos.</p>
+      <p>Echa un vistazo al catálogo, aprende a elegir tu pala con nuestras guías y escríbenos si tienes cualquier duda.</p>
+      <a class="boton" href="catalogo.html">Ver el catálogo de palas, pelotas y grips</a>
+    </section>
+
+    <!-- Ventajas de la tienda -->
+    <section>
+      <h2>Por qué comprar en PadelPlus</h2>
+      <ul>
+        <li><strong>Palas de referencia:</strong> modelos ligados a jugadores profesionales como Agustín Tapia y Juan Lebrón.</li>
+        <li><strong>Guías claras:</strong> te explicamos la forma, el balance y los materiales sin tecnicismos.</li>
+        <li><strong>Para todos los niveles:</strong> consejos tanto para quien empieza como para quien ya compite.</li>
+        <li><strong>Atención directa:</strong> respondemos tus consultas desde el formulario de contacto.</li>
+      </ul>
+    </section>
+
+    <!-- Pasos para elegir pala -->
+    <section>
+      <h2>Cómo elegir tu primera pala en cuatro pasos</h2>
+      <ol>
+        <li><strong>Piensa en tu nivel:</strong> si estás empezando, busca una pala cómoda, ligera y fácil de manejar.</li>
+        <li><strong>Elige la forma:</strong> la redonda da control, la lágrima equilibra control y potencia, y la diamante prioriza la potencia.</li>
+        <li><strong>Revisa el balance:</strong> un balance bajo ayuda al control y un balance alto aporta fuerza en los remates.</li>
+        <li><strong>Fíjate en el material:</strong> la goma blanda es más cómoda y la goma dura es más firme.</li>
+      </ol>
+      <p>Si quieres ver todo esto comparado, consulta las <a href="info.html">tablas de formas y materiales de la página de información</a>.</p>
+    </section>
+
+    <!-- Novedades de la web  -->
+    <section>
+      <h2>Novedades de la web</h2>
+      <div class="rejilla">
+        <article class="tarjeta sin-imagen animado">
+          <span class="etiqueta">Nuevo</span>
+          <p class="fecha">3 de noviembre de 2026</p>
+          <h3>Nuevo catálogo con palas, pelotas y grips</h3>
+          <p>Estrenamos el catálogo con tres palas, tres botes de pelotas y tres overgrips.</p>
+          <p><a href="catalogo.html">Ir al catálogo completo</a></p>
+        </article>
+        <article class="tarjeta sin-imagen animado">
+          <p class="fecha">12 de noviembre de 2026</p>
+          <h3>Tablas para elegir forma y material de la pala</h3>
+          <p>Añadimos tablas comparativas, preguntas frecuentes y vídeos a la página de información.</p>
+          <p><a href="info.html">Ir a la página de información</a></p>
+        </article>
+        <article class="tarjeta sin-imagen animado">
+          <p class="fecha">17 de noviembre de 2026</p>
+          <h3>Formulario de contacto con validación nativa</h3>
+          <p>Ya puedes escribirnos desde un formulario que comprueba los campos obligatorios.</p>
+          <p><a href="contacto.html">Ir al formulario de contacto</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 Ismael Navarro Carrasco. Proyecto de estudio.</p>
+    <ul class="enlaces-pie">
+      <li><a href="https://github.com/Inavcar2910/ProyectoFinalTema2LdM" target="_blank" rel="noopener">Repositorio del proyecto en GitHub</a></li>
+      <li><a href="noticias.xml">Canal RSS de noticias</a></li>
+    </ul>
+  </footer>
+</body>
 </html>
