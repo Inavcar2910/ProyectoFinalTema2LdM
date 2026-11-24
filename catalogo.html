@@ -1,39 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalogo</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles_catalogo.css" />
-  </head>
-  <body>
-    <header> <img src="img/PadelPlusLogo.png" alt="PadelPlus"><!-- <h1>PadelPlus</h1> --></header>
-    <nav>
-      <menu>
-        <a href="index.html"><h3>Inicio</h3></a>
-        <a href="catalogo.html"><h3>Catálogo</h3></a>
-        <a href="info.html"><h3>Info</h3></a>
-        <a href="contacto.html"><h3>Contacto</h3></a>
-      </menu>
-    </nav>
-    <h2>Palas</h2>
-    <div>
-      <img src="img/AT10 Luxury Genius 12K Alum XTREME 2026 by Agustín Tapia.png" alt="Pala1" />
-      <img src="img/Adidas Metalbone Carbon Ctrl 3.3 Reedición 2024.png" alt="Pala2" />
-      <img src="img/Babolat Technical Vertuo Juan Lebrón 2.5 2025.png" alt="Pala3" />
-    </div>
-    <h2>Pelotas</h2>
-    <div>
-      <img src="" alt="Pala1" />
-      <img src="" alt="Pala1" />
-      <img src="" alt="Pala1" />
-    </div>
-    <h2>Grips</h2>
-    <div>
-      <img src="" alt="Pala1" />
-      <img src="" alt="Pala1" />
-      <img src="" alt="Pala1" />
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo — PadelPlus</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32.png">
+  <meta name="description" content="Catálogo de PadelPlus con tres palas, tres botes de pelotas y tres overgrips de pádel, con descripciones y precios orientativos.">
+  <meta name="theme-color" content="#12355b">
+  <link rel="alternate" type="application/rss+xml" title="Noticias RSS" href="noticias.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a href="index.html">
+      <img class="logo" src="imagenes/PadelPlusLogo.svg" alt="Logotipo de PadelPlus con una pala, una pelota y el signo más" width="140" height="140">
+    </a>
+  </header>
+
+  <nav class="barra">
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+      <li><a href="info.html">Información</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Catálogo de material de pádel</h1>
+    <p>Estas son las palas, pelotas y grips que tenemos en PadelPlus. Los precios son orientativos y sirven como ejemplo para esta web.</p>
+
+    <section>
+      <h2>Palas</h2>
+      <div class="rejilla">
+        <article class="tarjeta animado">
+          <span class="etiqueta">Nuevo</span>
+          <img src="imagenes/pala-adidas-metalbone.webp" alt="Pala de pádel Adidas Metalbone Carbon Ctrl 3.3, reedición de 2024" width="128" height="128">
+          <h3>Adidas Metalbone Carbon Ctrl 3.3</h3>
+          <p>Reedición 2024 de la línea Metalbone. Es un modelo orientado al control, en el que el carbono refuerza la estabilidad del golpeo.</p>
+          <p class="precio"><strong>199,95 &euro;</strong></p>
+        </article>
+        <article class="tarjeta animado">
+          <span class="etiqueta oferta">Oferta</span>
+          <img src="imagenes/pala-bullpadel-vertex.webp" alt="Pala de pádel Bullpadel Vertex 05 Comfort 26 para adulto" width="201" height="201">
+          <h3>Bullpadel Vertex 05 Comfort 26</h3>
+          <p>Pala de alto rendimiento pensada para jugadores avanzados que buscan potencia máxima con un tacto confortable y menor vibración.</p>
+          <p class="precio"><s>249,95 &euro;</s><strong>189,95 &euro;</strong></p>
+        </article>
+        <article class="tarjeta animado">
+          <img src="imagenes/pala-siux-fenix.webp" alt="Pala de pádel Siux Fenix Pro 2026 Glow purple de Leo Augsburger" width="128" height="128">
+          <h3>Siux Fenix Pro 2026 Glow Purple</h3>
+          <p>Modelo oficial de Leo Augsburger con diseño Glow Purple, concebida para un juego ofensivo y remates definitivos.</p>
+          <p class="precio"><strong>239,95 &euro;</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pelotas</h2>
+      <div class="rejilla">
+        <article class="tarjeta animado">
+          <img src="imagenes/pelotas-adidas-speed-rx.webp" alt="Tubo de 3 pelotas de pádel presurizadas Adidas Speed RX" width="128" height="128" loading="lazy">
+          <h3>Adidas Speed RX</h3>
+          <p>Tubo de tres pelotas presurizadas diseñadas para un juego rápido, con goma de alta densidad y rebote uniforme.</p>
+          <p class="precio"><strong>5,95 &euro;</strong></p>
+        </article>
+        <article class="tarjeta animado">
+          <img src="imagenes/pelotas-bullpadel-fip.webp" alt="Tripack de pelotas de pádel presurizadas Bullpadel FIP Next Pro" width="128" height="128" loading="lazy">
+          <h3>Bullpadel FIP Next Pro</h3>
+          <p>Tripack de pelotas oficiales de la Federación Internacional de Pádel, reconocidas por su resistencia y tacto firme.</p>
+          <p class="precio"><strong>14,95 &euro;</strong></p>
+        </article>
+        <article class="tarjeta animado">
+          <img src="imagenes/pelotas-kuikma-control.webp" alt="Pack de 3 pelotas de pádel presurizadas Kuikma Control" width="201" height="201" loading="lazy">
+          <h3>Kuikma Control</h3>
+          <p>Bote de tres pelotas concebidas para un excelente control de trayectoria en cada punto y gran durabilidad en entrenamientos.</p>
+          <p class="precio"><strong>4,95 &euro;</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Grips</h2>
+      <div class="rejilla">
+        <article class="tarjeta animado">
+          <img src="imagenes/grip-bullpadel-hesacore.webp" alt="Grip Hesacore de Bullpadel con diseño hexagonal" width="128" height="128" loading="lazy">
+          <h3>Bullpadel Grip Hesacore</h3>
+          <p>Grip innovador con estructura de panel de abeja que reduce vibraciones musculares y mejora el agarre natural de la mano.</p>
+          <p class="precio"><strong>17,95 &euro;</strong></p>
+        </article>
+        <article class="tarjeta animado">
+          <img src="imagenes/overgrip-head-pro.webp" alt="Paquete de overgrips Head Padel Pro" width="128" height="128" loading="lazy">
+          <h3>Head Padel Pro Overgrip</h3>
+          <p>Overgrip con superficie microperforada de alta absorción que asegura un contacto seco y máxima sensibilidad en el golpeo.</p>
+          <p class="precio"><strong>6,50 &euro;</strong></p>
+        </article>
+        <article class="tarjeta animado">
+          <img src="imagenes/grip-kuikma-comfort.webp" alt="Grip Kuikma Comfort negro de repuesto" width="128" height="128" loading="lazy">
+          <h3>Kuikma Comfort Grip</h3>
+          <p>Grip acolchado en color negro que proporciona un agarre suave, cómodo y una óptima amortiguación en el puño de la pala.</p>
+          <p class="precio"><strong>3,50 &euro;</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="creditos">
+      <h2>Créditos y licencias de las imágenes</h2>
+      <p>Todas las imágenes utilizadas en este proyecto han sido recopiladas con fines educativos:</p>
+      <ul>
+        <li><strong>Logotipo de PadelPlus:</strong> Imagen en formato PNG (<em>PadelPlusLogo.svg</em>), diseño original propio.</li>
+        <li><strong>Iconos de la aplicación:</strong> Favicon en formato ICO (<em>favicon.ico</em>) y versión PNG (<em>favicon-32.png</em>), creación propia .</li>
+        <li><strong>Palas de pádel:</strong> Imágenes en formato WebP de los modelos <em>Adidas Metalbone Carbon Ctrl 3.3</em>, <em>Bullpadel Vertex 05 Comfort</em> y <em>Siux Fenix Pro 2026</em>, procedentes de catálogos oficiales de producto distribuidos bajo licencia de uso informativo y comercial por sus respectivas marcas (Adidas Pádel, Bullpadel y Siux Pádel).</li>
+        <li><strong>Pelotas de pádel:</strong> Imágenes en formato WebP de <em>Adidas Speed RX</em>, <em>Bullpadel FIP Next Pro</em> y <em>Kuikma Control</em>, procedentes de catálogos y distribuidores deportivos oficiales (Adidas, Bullpadel, Decathlon/Kuikma), utilizadas con fines ilustrativos en el ámbito académico.</li>
+        <li><strong>Grips y overgrips:</strong> Imágenes en formato WebP de <em>Bullpadel Hesacore</em>, <em>Head Padel Pro</em> y <em>Kuikma Comfort</em>, procedentes de recursos de producto de Bullpadel, Head Sport y Decathlon, bajo licencia editorial e ilustrativa para prácticas de formación.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Ismael Navarro Carrasco. Proyecto de estudio.</p>
+    <ul class="enlaces-pie">
+      <li><a href="https://github.com/Inavcar2910/ProyectoFinalTema2LdM" target="_blank" rel="noopener">Repositorio del proyecto en GitHub</a></li>
+      <li><a href="noticias.xml">Canal RSS de noticias</a></li>
+      <li><a href="catalogo.html#creditos">Créditos de las imágenes</a></li>
+    </ul>
+  </footer>
+</body>
 </html>

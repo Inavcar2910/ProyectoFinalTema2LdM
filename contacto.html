@@ -1,50 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles_contacto.css" />
-  </head>
-  <body>
-    <header><h1>PadelPlus</h1></header>
-    <nav>
-      <menu>
-        <a href="index.html"><h3>Inicio</h3></a>
-        <a href="catalogo.html"><h3>Catálogo</h3></a>
-        <a href="info.html"><h3>Info</h3></a>
-        <a href="contacto.html"><h3>Contacto</h3></a>
-      </menu>
-    </nav>
-    <form action="contacto.html" method="post">
-      <label for="nombre"
-        >Nombre: <input type="text" name="nombre" required
-      /></label>
-      <br />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — PadelPlus</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32.png">
+  <meta name="description" content="Escribe a PadelPlus con tus dudas sobre palas, pelotas o grips: formulario de contacto con validación y datos del proyecto.">
+  <meta name="theme-color" content="#12355b">
+  <link rel="alternate" type="application/rss+xml" title="Noticias RSS" href="noticias.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <a href="index.html">
+      <img class="logo" src="imagenes/PadelPlusLogo.svg" alt="Logotipo de PadelPlus con una pala, una pelota y el signo más" width="140" height="140">
+    </a>
+  </header>
 
-      <label for="apellido"
-        >Apellidos:
-        <input type="text" name="apellido" required />
-      </label>
-      <br />
+  <nav class="barra">
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="info.html">Información</a></li>
+      <li><a href="contacto.html" class="activo">Contacto</a></li>
+    </ul>
+  </nav>
 
-      <label for="correo"
-        >Correo:
-        <input type="text" name="correo" required />
-      </label>
-      <br />
+  <main>
+    <h1>Contacta con PadelPlus</h1>
+    <p>¿Dudas sobre qué pala elegir, sobre unas pelotas o sobre un grip? Rellena el formulario y te responderemos lo antes posible. Todos los campos son obligatorios salvo los productos de interés.</p>
 
-      <label for="notificaciones"
-        >Notificaciones: Sí
-        <input type="radio" name="notificaciones" required />
-      </label>
-      <label for="notificaciones"
-        >No
-        <input type="radio" name="notificaciones" required />
-      </label>
-      <br />
-      <button type="submit">Enviar</button>
-    </form>
-  </body>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="contacto.html" method="get">
+        <fieldset>
+          <legend>Tus datos</legend>
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input class="entrada" type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input class="entrada" type="email" id="correo" name="correo" required>
+          </div>
+          <div class="campo">
+            <label for="edad">Edad (entre 14 y 99 años)</label>
+            <input class="entrada" type="number" id="edad" name="edad" min="14" max="99" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu nivel de juego</legend>
+          <div class="opcion">
+            <input type="radio" id="nivel-iniciacion" name="nivel" value="iniciacion" required>
+            <label for="nivel-iniciacion">Iniciación</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="nivel-intermedio" name="nivel" value="intermedio">
+            <label for="nivel-intermedio">Intermedio</label>
+          </div>
+          <div class="opcion">
+            <input type="radio" id="nivel-avanzado" name="nivel" value="avanzado">
+            <label for="nivel-avanzado">Avanzado</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Productos que te interesan (opcional)</legend>
+          <div class="opcion">
+            <input type="checkbox" id="int-palas" name="interes" value="palas" checked>
+            <label for="int-palas">Palas de pádel</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="int-pelotas" name="interes" value="pelotas">
+            <label for="int-pelotas">Pelotas</label>
+          </div>
+          <div class="opcion">
+            <input type="checkbox" id="int-grips" name="interes" value="grips">
+            <label for="int-grips">Grips y overgrips</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu consulta</legend>
+          <div class="campo">
+            <label for="tema">Tema de la consulta</label>
+            <select class="entrada" id="tema" name="tema" required>
+              <option value="">Elige un tema</option>
+              <option value="palas">Palas</option>
+              <option value="pelotas">Pelotas</option>
+              <option value="grips">Grips</option>
+              <option value="otro">Otro tema</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Tu mensaje</label>
+            <textarea class="entrada" id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+
+          <div class="opcion">
+            <input type="checkbox" id="privacidad" name="privacidad" value="acepto" required>
+            <label for="privacidad">Acepto que se usen mis datos solo para responder a mi consulta</label>
+          </div>
+        </fieldset>
+
+        <button class="boton" type="submit">Enviar consulta</button>
+      </form>
+    </section>
+
+    <aside class="aviso">
+      <h2>Antes de escribirnos</h2>
+      <ul>
+        <li>Indica qué producto del catálogo te interesa.</li>
+        <li>Cuéntanos cuánto tiempo llevas jugando al pádel.</li>
+        <li>Revisa la <a href="info.html">página de información</a>: tu duda puede estar en las preguntas frecuentes.</li>
+      </ul>
+    </aside>
+
+    <section>
+      <h2>Datos del proyecto</h2>
+      <dl>
+        <dt>Titular de la web</dt>
+        <dd>Ismael Navarro Carrasco</dd>
+        <dt>Proyecto</dt>
+        <dd>Proyecto final del Tema 2 de Lenguajes de Marcas (1.º de Desarrollo de Aplicaciones Web)</dd>
+        <dt>Código fuente</dt>
+        <dd><a href="https://github.com/Inavcar2910/ProyectoFinalTema2LdM" target="_blank" rel="noopener">Repositorio en GitHub (se abre en una pestaña nueva)</a></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Ismael Navarro Carrasco. Proyecto de estudio.</p>
+    <ul class="enlaces-pie">
+      <li><a href="https://github.com/Inavcar2910/ProyectoFinalTema2LdM" target="_blank" rel="noopener">Repositorio del proyecto en GitHub</a></li>
+      <li><a href="noticias.xml">Canal RSS de noticias</a></li>
+      <li><a href="catalogo.html#creditos">Créditos de las imágenes</a></li>
+    </ul>
+  </footer>
+</body>
 </html>
+
